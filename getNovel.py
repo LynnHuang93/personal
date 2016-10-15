@@ -2,9 +2,9 @@ import urllib2
 from pyquery import PyQuery as pq
 
 def main():
-	f = open("reader_and_hero_are_true_love.txt",'w')
-	for i in range(1,131):
-		url = "http://www.sto.cc/114220-" + str(i) + "/"
+	f = open("nanfengruwohuai.txt",'w')
+	for i in range(1,78):
+		url = "http://www.sto.cc/149054-" + str(i) + "/"
 		response = urllib2.urlopen(url)
 		html = response.read()
 		content = pq(html).find('#BookContent')
